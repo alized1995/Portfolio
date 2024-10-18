@@ -1,0 +1,27 @@
+<app-nav-menu></app-nav-menu>
+<div class="container">
+  <div class="card card-bg">
+    <div class="card-body row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <h2 class="mb-5">Hi There,</h2>
+        <h2 class="mb-5"><em>I m Ali Ahsan Zaidi</em></h2>
+        <h3 class="mb-5"><em>A skilled full stack developer</em></h3>
+        <p-button label="Want to know about me?" class="mb-3" (click)="toggleAboutMe()"/>
+        <div class="card mt-5" [hidden]="hiddenAboutMe">
+            <div class="card-body bg-dark text-white">
+                <p>As a full stack developer, I work on end-to-end web development projects using Angular and ASP.NET Core technologies. I am responsible for creating user interfaces, server-side logic, database development, and deployment on Azure. I also perform developer testing and ensure quality and performance of each module I develop.</p>
+
+                <p>I have a MS in computer engineering from Bahria University, where I did my thesis on copy move image forgery detection using natural scene statistics and machine learning. I have also obtained multiple certifications on web API development, programming fundamentals, and ASP.NET Core. I am passionate about learning new skills and applying them to solve real-world problems. My goal is to grow as a software engineer and contribute to innovative and impactful solutions.</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-6 text-start">
+            <p-image
+            src="../../assets/images/profile.jpeg"
+            alt="Profile Photo"
+            width="300"  
+          />      
+        </div>  
+    </div>
+  </div>
+</div>

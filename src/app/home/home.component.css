@@ -1,0 +1,6 @@
+.card-bg {
+    background-image: url('../../assets/images/codebg.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-position: center; /* Center the image */
+    color: white; /* Ensure text is readable */
+  }
