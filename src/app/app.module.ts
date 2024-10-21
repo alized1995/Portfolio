@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

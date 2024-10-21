@@ -24,8 +24,8 @@ export class NavMenuComponent implements OnInit{
           
       },
       {
-          label: 'Features',
-          icon: 'pi pi-star'
+          label: 'Skills',
+          routerLink: '/skills'
       },
       {
           label: 'Projects',

@@ -3,4 +3,36 @@
     background-size: cover; /* Ensure the image covers the entire card */
     background-position: center; /* Center the image */
     color: white; /* Ensure text is readable */
+    position: relative;
+  }
+
+  .typewriter {
+    white-space: nowrap;
+    word-spacing: normal;
+    overflow: hidden;
+    border-right: 2px solid; /* Simulate a cursor */
+    animation: typing 3s steps(30, end) 1s infinite, 
+               blink-caret 0.75s step-end infinite;
+    width: 19ch; /* Match to the number of characters in your text */
+  }
+  
+  @keyframes typing {
+    0% { width: 0; }
+    50% { width: 16ch; } /* Full text width */
+    70% { width: 16ch; } /* Full text width */
+    90% { width: 16ch; } /* Full text width */
+    100% { width: 0; }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: black;
+    }
+  }
+
+  @media (max-width: 600px) {
+    white-space: normal;
   }

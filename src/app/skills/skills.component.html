@@ -1,0 +1,25 @@
+
+<div class="container d-flex">
+    <div class="card card-bg" style="min-height: 50rem;">
+      <div class="card-body row d-flex justify-content-center">
+        <div class="col-md-4 col-sm-12" *ngFor="let card of cards">
+            <p-card [header]="card.name" [subheader]="card.type" [style]="{ width: '300px' }" class="p-3 text-center">
+                <ng-template pTemplate="header">
+                    <img alt="Card" [src]="card.logo" width="200px" height="200px" />
+                </ng-template>
+                <p>
+                    {{card.definition}}
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex gap-3 mt-1">
+                        <p-button label="For more information" severity="primary" class="w-full" styleClass="w-full" 
+                        (click)="goToWebsite(card)"
+                        />
+                    </div>
+                </ng-template>
+            </p-card>
+
+        </div>
+          </div> 
+      </div>
+    </div>
